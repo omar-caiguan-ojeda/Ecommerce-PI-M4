@@ -26,74 +26,75 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Project setup
+# E-commerce Omar Caiguan Ojeda
 
-```bash
-$ npm install
+## Descripción
+Este proyecto es una aplicación de comercio electrónico desarrollada con NestJS y TypeORM. Permite la gestión de productos, clientes y órdenes de compra.
+
+## Características
+- **Gestión de productos**: Crear, actualizar, eliminar y listar productos.
+- **Gestión de clientes**: Registro, autenticación y administración de clientes.
+- **Órdenes de compra**: Creación y seguimiento de órdenes de compra.
+- **Autenticación**: Uso de JWT para seguridad.
+- **Documentación**: Implementación de Swagger para documentación de la API.
+
+## Tecnologías
+- **NestJS**: Framework para el backend.
+- **TypeORM**: ORM para la gestión de base de datos.
+- **PostgreSQL**: Base de datos relacional.
+- **Swagger**: Generación automática de documentación.
+- **Cloudinary**: Almacenamiento de imágenes.
+- **Docker**: Contenedores para despliegue.
+
+## Instalación
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/ecommerce-omar-caiguan-ojeda.git
+   cd ecommerce-omar-caiguan-ojeda
+   ```
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Configurar variables de entorno (`.env`):
+   ```env
+   DATABASE_URL=postgres://usuario:contraseña@localhost:5432/ecommerce
+   JWT_SECRET=tu_secreto
+   CLOUDINARY_URL=tu_url_de_cloudinary
+   ```
+4. Ejecutar migraciones:
+   ```bash
+   npm run migration:run
+   ```
+5. Iniciar la aplicación en desarrollo:
+   ```bash
+   npm run start:dev
+   ```
+
+## Scripts disponibles
+- `npm run start` - Inicia la aplicación.
+- `npm run start:dev` - Inicia la aplicación en modo desarrollo.
+- `npm run build` - Compila la aplicación.
+- `npm run test` - Ejecuta las pruebas unitarias.
+- `npm run test:e2e` - Ejecuta las pruebas de integración.
+- `npm run lint` - Ejecuta ESLint.
+- `npm run migration:generate` - Genera una nueva migración.
+- `npm run migration:run` - Aplica las migraciones.
+
+## API Documentation
+La documentación de la API se genera automáticamente con Swagger y está disponible en:
+```
+http://localhost:3000/api
 ```
 
-## Compile and run the project
+## Contribución
+1. Realiza un fork del repositorio.
+2. Crea una rama para tu nueva funcionalidad (`feature/nueva-funcionalidad`).
+3. Realiza un commit con tus cambios (`git commit -m 'Agregada nueva funcionalidad'`).
+4. Realiza un push a tu rama (`git push origin feature/nueva-funcionalidad`).
+5. Crea un Pull Request en GitHub.
 
-```bash
-# development
-$ npm run start
+## Licencia
+Este proyecto está bajo la licencia **UNLICENSED**.
 
-# watch mode
-$ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-## Resources
-
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
